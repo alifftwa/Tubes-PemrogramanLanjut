@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ExpansionPanel.CollapsedPanel?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="21.0" layoutY="80.0" prefHeight="133.0" prefWidth="134.0" spacing="18.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="95.0" text="Mata Kuliah" />
+            <Label prefHeight="18.0" prefWidth="107.0" text="Dosen Pengampu" />
+            <Label prefHeight="18.0" prefWidth="95.0" text="Waktu" />
+            <Label text="GKB" />
+         </children>
+      </VBox>
+      <VBox layoutX="132.0" layoutY="80.0" prefHeight="154.0" prefWidth="181.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfmatakuliah" />
+            <TextField fx:id="tfdosenpengampu" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfwaktu" layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="174.0" />
+            <TextField fx:id="tfgkb" layoutX="10.0" layoutY="82.0" prefHeight="18.0" prefWidth="174.0" />
+         </children>
+      </VBox>
+      <ExpansionPanel.CollapsedPanel prefWidth="252" />
+      <TableView fx:id="tvbook" layoutX="341.0" layoutY="80.0" prefHeight="319.0" prefWidth="435.0">
+        <columns>
+          <TableColumn fx:id="colmatakuliah" prefWidth="88.800048828125" text="Mata Kuliah" />
+          <TableColumn fx:id="colnamadosen" prefWidth="156.79998779296875" text="Nama Dosen" />
+            <TableColumn fx:id="colwaktu" prefWidth="111.99993896484375" text="Waktu" />
+            <TableColumn fx:id="colgkb" prefWidth="76.00004882812499" text="GKB" />
+        </columns>
+      </TableView>
+      <Button fx:id="btninsert" layoutX="132.0" layoutY="258.0" mnemonicParsing="false" onAction="#handlebuttonaction" prefHeight="26.0" prefWidth="50.0" text="Insert" />
+      <Button fx:id="btnupdate" layoutX="195.0" layoutY="258.0" mnemonicParsing="false" onAction="#handlebuttonaction" text="Update" />
+      <Button fx:id="btndelete" layoutX="263.0" layoutY="258.0" mnemonicParsing="false" onAction="#handlebuttonaction" text="Delete" />
+   </children>
+</AnchorPane>

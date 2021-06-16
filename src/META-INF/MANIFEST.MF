@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: jadwal_kuliah_main.jadwal_kuliah_main
+
